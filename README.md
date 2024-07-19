@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/storage-sync-accessor-decorator)](https://www.npmjs.com/package/storage-sync-accessor-decorator)  
+[![npm](https://img.shields.io/npm/v/storage-sync-accessor-decorator)](https://www.npmjs.com/package/storage-sync-accessor-decorator) 
 [![license](https://img.shields.io/npm/l/storage-sync-accessor-decorator)](https://github.com/js2me/storage-sync-accessor-decorator/blob/master/LICENSE)  
 
 
