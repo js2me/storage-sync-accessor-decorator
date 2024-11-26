@@ -36,7 +36,7 @@ class SomeModel {
 
 ```ts
 
-import { createStorage } from 'yammies/storage';
+import { createStorage, GetFromStorageConfig } from 'yammies/storage';
 
 export const storage = createStorage({
   prefix: 'my-prefix',
