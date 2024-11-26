@@ -31,3 +31,31 @@ class SomeModel {
   accessor baz!: number
 }
 ```
+
+## other cases   
+
+```ts
+
+import { createStorage } from 'yammies/storage';
+
+export const storage = createStorage({
+  prefix: 'my-prefix',
+});
+
+
+interface StorageSyncDecoratorConfig<T>
+  extends Omit<GetFromStorageConfig<T>, 'key' | 'prefix'> {
+  /**
+   * Ключ хранилища, если не указан, то будет использовано имя свойства
+   */
+  key?: GetFromStorageConfig<T>['key'];
+}
+
+export const storageSync = createStorageSyncDecorator<
+  StorageSyncDecoratorConfig<any>
+>({
+  get: storage.get,
+  set: storage.set,
+});
+
+```
