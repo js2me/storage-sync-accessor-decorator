@@ -1,20 +1,13 @@
 [![npm](https://img.shields.io/npm/v/storage-sync-accessor-decorator)](https://www.npmjs.com/package/storage-sync-accessor-decorator) 
 [![license](https://img.shields.io/npm/l/storage-sync-accessor-decorator)](https://github.com/js2me/storage-sync-accessor-decorator/blob/master/LICENSE)  
 
-
-> [!WARNING]  
-> It's fine if you use this library from NPM package with a **static versioning** in case you
-> want it for some pet-project or to test it's capabilities.
->
-> But for production use it's **strongly recommended** to create a fork, because I do not write
-> Changelogs and may break / add some functionality without notice.  
-
 # storage-sync-accessor-decorator  
 
 ## Usage  
 
 ```ts
 import { observable } from "mobx";
+import { createStorageSyncDecorator } from "storage-sync-accessor-decorator";
 
 const storageSync = createStorageSyncDecorator({
   get: ({ key, fallback }) => {
