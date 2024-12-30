@@ -3,6 +3,8 @@
 
 # storage-sync-accessor-decorator  
 
+Works only for property assignment cases  
+
 ## Usage  
 
 ```ts
