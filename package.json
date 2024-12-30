@@ -1,6 +1,6 @@
 {
   "name": "storage-sync-accessor-decorator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "clean": "rimraf dist",
     "check": "eslint . --fix",
